@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fieldset{
+            border-radius: 20px;
+        }
+      
+#registrationform
+{
+    font-family: cursive;
+    text-shadow: 2px 2px 5px red;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#username{
+    font-family: cursive;
+    
+}
+#password{  font-family: cursive;}
+#DOB{  font-family: cursive;}
+#address{  font-family: cursive;
+display: flex; margin-left: 20px;
+align-items: left;}
+
+#phonenumber{  font-family: cursive;}
+
+#emailid{  font-family: cursive;}
+
+#gender{ font-family: cursive;}
+
+#male{ font-family: cursive;}
+
+#female{ font-family: cursive;}
+
+#intrest{font-family: cursive;}
+
+#file{font-family: cursive;}
+
+#qualification{
+    font-family: cursive;
+}
+#skill{
+    font-family: cursive;
+}
+#marquee{  font-family: cursive;
+    color: red;
+
+}
+    </style>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000/d:/HTML%20&%20CSS/class%20work/form.html"></form>
+    <fieldset style="background-color: beige;" id="fieldset">
+<legend align="center" id="registrationform" > Registration form</legend>
+<label for="username" id="username">User name:</label>
+<input type="text" id="username" placeholder="Enter UserName">
+
+<br> <br>
+
+
+<label for="password" id="password" >Password:</label>
+<input type="password" id="password" placeholder="Enter your Password"><br><br>
+
+
+<label for="date" id="DOB">DOB:</label>
+<input type="date">
+<br><br>
+
+<label for="address" id="address" >Address:</label>
+<textarea name="Address" id="address" cols="30" rows="5" placeholder="Type your Address Here..."></textarea>
+<br><br>
+
+<label for="phonenumber" id="phonenumber" pattern="[0-9]{10}">Phone Number:</label>
+<input type="number" name="phonenumber" id="phonenumber"><br><br>
+<label for="email" id="emailid">Email.ID:</label>
+<input type="email" name="email" id="email" placeholder="Ex:abc@gmail.com"><br><br>
+
+<label for="radio" id="gender">Gender:-</label>
+<label for="male" id="male">Male</label>
+<input type="radio" name="gender" id="male">
+
+<label for="female" id="female">female</label>
+<input type="radio" name="gender" id="female"><br><br>
+
+<label for="range" id="intrest">Intrest:</label>
+<input type="range" id="range"><br><br>
+<label for="file" id="file">Choose File:</label>
+<input type="file"><br><br>    
+
+<label for="qualification" id="qualification">Qualification:</label> 
+
+<select name="Choose qualification" id="qualification">
+<option value="10th">10th class</option>
+<option value="inter">Inter</option>
+<option value="Diploma">Diploma</option>
+<option value="B.tech">B.Tech</option>
+</select>   <br><br>
+
+<label for="Skills" id="Skill">Skills:</label>
+<input type="checkbox" id="Skill" name="html" id="html">Html
+<input type="checkbox" name="java" id="java"> java
+<input type="checkbox" name="React js" id="React js"> React js
+<br><br>
+<button style="background-color: rgb(69, 211, 93);" value="submit">Submit</button>
+
+<button value="reset" style="background-color: rgb(236, 65, 65);" >Reset</button>
+<br><br>
+<marquee behavior="" direction="right" id="marquee" scrollamount="10">Registrations Closess Soon!!!</marquee>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
