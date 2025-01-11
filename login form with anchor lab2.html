@@ -1,0 +1,163 @@
+<!-- lab2:
+
+write a hrml program to explain the working of hyperlinks using anchor tag and href and target attributes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        
+        form{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:2px solid black;
+            background-image: linear-gradient(rgb(76, 160, 194),rgb(203, 144, 238));
+
+        }
+        fieldset{
+            height: auto;
+            width: 500px;
+           border:3px solid blueviolet;
+           border-top-left-radius: 3rem;
+           border-bottom-right-radius: 3rem;
+           box-shadow: 4px 4px 9px rgb(248, 247, 247);
+
+        }
+        h1{
+            font-family: cursive;
+            margin-bottom: 3rem;
+            text-shadow: 1px 2px 3px white;
+            color: whi;
+        }
+        a{
+            text-decoration: none;
+        }
+        .button{
+           display: flex;
+           justify-content: center;
+           gap: 1.5rem;
+          
+           
+
+
+        }
+        .login{
+            background-color: rgb(110, 110, 221);
+            border: none;
+            padding: 0.9rem;
+            border-radius: 20px;
+            text-transform: capitalize;
+            color: white;
+        }
+        .cancel{
+            background-color: rgb(110, 110, 221);
+            border: none;
+            padding: 0.9rem;
+            border-radius: 20px;
+            text-transform: capitalize;
+            color: white;
+        }
+        .username{
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-weight: 600;
+        
+
+        }
+        .password{
+            align-items: center;
+          justify-content: center;
+          display: flex;
+          font-weight: 600;
+
+        }
+        #forgotpassword{
+            display: flex;
+            justify-content: center;
+        }
+        #forgotpassword:hover{
+            color: red;
+        }
+        .login:hover{
+            background-color: rgb(114, 207, 114);
+        }
+        .cancel:hover{
+            background-color: rgb(206, 84, 84);
+        }
+        #nameinp{
+            margin-left: 10px;
+            border: none;
+            padding: 15px;
+            border-radius: 20px;
+        }
+        #passinp{
+            margin-left: 10px;
+            border: none;
+            padding: 15px;
+            border-radius: 20px;
+
+        }
+        #nameinp:hover{
+            box-shadow: 2px 3px 50px blue;
+        }
+        #passinp:hover{
+            box-shadow: 2px 3px 50px purple;
+        }
+        footer{
+            text-transform: capitalize;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 2rem;
+            font-size: small;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="./login form with anchor lab2.html">
+
+        <fieldset>
+            <h1 align="center">Login Form</h1>
+
+
+           <div class="fields">
+
+            
+
+            <div class="username">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                  </svg>
+                <label for="Username">UserName:</label>
+            <input type="text" name="Username" id="nameinp">
+            </div>
+<br><br>
+<div class="password">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
+      </svg>
+    <label for="pass">Password:</label>
+<input type="password" name="pass" id="passinp">
+</div>
+<br><br>
+           </div>
+
+<div class="button">
+    <button class="login">login</button>
+<button class="cancel">clear</button>
+</div>
+
+<br><br>
+<a href="./forgot password.html" target="_blank" id="forgotpassword"><span>Forgot Password</span></a>
+<footer>akash companie pvt ltd </footer>
+        </fieldset>
+    </form>
+</body>
+</html>
